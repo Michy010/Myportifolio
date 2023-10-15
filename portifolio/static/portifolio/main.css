@@ -1,6 +1,6 @@
 /* Styling the Menu bar */
 .Menu {
-    background-color:black;
+    background-color:rgba(0, 0, 0, 1);
     position: sticky;
     position: -webkit-sticky;
     top: 10px;
@@ -29,6 +29,9 @@
 }
 
 a:hover {
+    color: blue;
+}
+a:active {
     color: blue;
 }
 
@@ -113,4 +116,13 @@ a:hover {
     margin-left: 60px;
     margin-right: 80px;
     font-size: large;
+    text-decoration: none;
 }
+
+/* Styling Contacts page*/
+/* .services-style5 {
+    margin-left: 60px;
+    margin-right: 80px;
+    font-size: large;
+    text-decoration: ;
+} */
