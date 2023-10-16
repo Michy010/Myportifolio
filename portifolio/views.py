@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from . models import PortfolioProject
 
 # Create your views here.
 
@@ -12,7 +13,8 @@ def services (request):
     return render (request, 'portifolio/services.html')
 
 def portfolio (request):
-    return render (request, 'portifolio/potifolio.html')
+    projects = PortfolioProject.objects.all()
+    return render (request, 'portifolio/potifolio.html', {'projects':projects})
 
 def contacts (request):
     return render (request, 'portifolio/contacts.html')
