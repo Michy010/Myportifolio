@@ -4,7 +4,7 @@ from . models import PortfolioProject
 # Create your views here.
 
 def index (request):
-    return render (request, 'portifolio/home.html')
+    return render (request, 'portifolio/index.html')
 
 def about (request):
     return render (request, 'portifolio/about.html')
