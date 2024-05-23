@@ -1,13 +1,42 @@
 {% extends 'portifolio/base.html' %}
 {% load static %}
+{% block title %}services{% endblock %}
 {% block content %}
-{% block title %} <head><title>Our services</title></head>{% endblock %}
+
 <h1 class="services-style"><b>SERVICES</b></h1>
 <p class="services-style">
     As a web developer, I offer a range of services to help you establish a strong online presence and achieve your goals. I combine my skills in website development with a deep understanding of the latest technologies to deliver high-quality solutions tailored to your needs.
 </p>
 
-<p class="services-style">
+<div class="services-flexbox-container">
+    <div class="django-webapp-div">
+        <div class="django-app-badge">1</div>
+        <div class="django-app-image"><img src="{% static 'portifolio/img/Django.png' %}" alt="django-app-icon"></div>
+        <div class="django-app-paragraph">
+            <p>Develop secure, scalable web applications tailored to your business using Django </p>
+        </div>
+    </div>
+
+
+    <div class="django-webapp-div">
+        <div class="django-app-badge">2</div>
+        <div class="django-app-image"><img src="{% static 'portifolio/img/SEO.png' %}" alt="django-app-icon"></div>
+        <div class="django-app-paragraph">
+            <p>Enhence your website visibility and drive organic traffic with our expert SEO services</p>
+        </div>
+    </div>
+
+
+    <div class="django-webapp-div">
+        <div class="django-app-badge">3</div>
+        <div class="django-app-image"><img src="{% static 'portifolio/img/Graphics_design.jpg' %}" alt="django-app-icon"></div>
+        <div class="django-app-paragraph">
+            <p>Create captivating logos, branding, and design to visually engage your audience</p>
+        </div>
+    </div>
+</div>
+
+<!-- <p class="services-style">
     <b>1. Website Design and development</b>
         <ul class="services-style">
             <li>Create modern and responsive websites that are visually appealing and user-friendly.</li>
@@ -60,11 +89,6 @@
             <li>Develop web based applications tailoored to your specific business needs.</li>
             <li>Ensure robust functionality and scalability.</li>
         </ul>
-</p>
-
-
-
-
-
-
+</p> -->
 {% endblock %}
+<script src="script.js"></script>

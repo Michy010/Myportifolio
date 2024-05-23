@@ -1,18 +1,17 @@
 {% extends 'portifolio/base.html' %}
+{% block title %}Home - Msita-portifolio{% endblock %}
 {% load static %}
-{% block content %}
-{% block title %} <head><title>Home</title></head>{% endblock %}
-<div class="blue-box">
-    <h1 id="salute">Hi!, i'm Michael Msita</h1>
-    <p id="career"> <b>Software Developer</b> </p>
-    <p id="salute">Welcome to my portifolio site, here i want to showcase you something, innovative and consistent</p> <br>
 
-    <div class="contact-info">
-        <a href="mailto:michaelmsita17@gmail.com"><i class="fas fa-envelope"></i></a>
-        <a href="https://twitter.com/ipcwashclub?t=zcDSCAid1vFIc9hU8UIRJw&s=09" target="_blank"><i class="fab fa-twitter"></i></a>
-        <a href="https://www.instagram.com/Michy_naldo" target="_blank"><i class="fab fa-instagram"></i></a>
-        <a href="https://www.facebook.com/Michy Naldo" target="_blank"><i class="fab fa-facebook"></i></a> <br>
-    </div>
-</div>
-<div class="Image"> <img class="photo" src="{% static 'portifolio/img/Myprofile.jpg' %}" alt="Michael Msita"></div>
+{% block content %}
+    <section id="welcome">
+        <img src="{% static 'portifolio/img/welcome.jpg' %}" alt="Welcome Image">
+        <h2>Welcome to My Portfolio!</h2>
+        <p>Explore my journey in environmental health, technology, and graphics. Feel free to connect with me!</p>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/michael-msita-3a64b1292/" target="_blank"><i class="fab fa-linkedin"></i>linkedin</a>
+            <a href="https://github.com/Michy010" target="_blank"><i class="fab fa-github"></i>github</a>
+        </div>
+    </section>
+
 {% endblock %}
+
