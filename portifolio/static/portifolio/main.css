@@ -95,8 +95,8 @@
 
 
 section#welcome img {
-    width: 200px;  /* Set the width to 200 pixels */
-    height: auto;  /* Maintain the aspect ratio */
+    width: 200px;
+    height: auto;
     border-radius: 10px;
     margin-bottom: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -154,6 +154,7 @@ nav ul li a {
 }
 nav ul li a:hover{
     color: #555;
+    font-weight: bold;
     text-decoration: none;
 }
 nav ul li a:active{
