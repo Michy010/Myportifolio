@@ -8,7 +8,7 @@
     <div class="project-div">
         <div><h2>{{ project.title }}</h2></div>
         <div>{{ project.description }}</div>
-        <div class="project-image"><img src="{{ project.image.url }}" alt="{{ project.title }} image"></div>
+        <div class="project-image"><img src="{{ MEDIA_URL}}{{ project.image.url }}" alt="{{ project.title }} image"></div>
         <div>Technologies Used: {{ project.technologies_used }}</div>
         <a href="{{ project.website_link }}" target="_blank"><b>View Project</b></a>
     </div>
